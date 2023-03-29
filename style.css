@@ -93,10 +93,144 @@
     background-color: red;
     padding: 10px;
     border-radius: 20%;
+    cursor: pointer;
+    
 }
 
 @media(max-width: 700px) {
-    .bg header nav ul li {
+    .bg header nav ul {
         display: none;
     }
+
+    .bg header nav ul.ativo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 10px;
+        margin-top: 30px;
+        padding: 40px;
+        animation: animation .5s forwards;
+    }
+
+    nav ul li {
+        text-decoration: underline;
+        margin-bottom: 30px;
+    }
+
+    .bg header h1 {
+        width: 200px;
+    }
+
+    .bg header i {
+        display: block;
+        position: absolute;
+        right: 80px;
+        font-size: 2.5rem;
+    }
+
+    .bg header i.ativo nav ul {
+        display: block !important;
+    }
+
+    .principal {
+        grid-template-columns: 1fr;
+    }
+
+    .principal span {
+        left: 60px;
+        font-size: 2rem;
+    }
+}
+
+@keyframes animation {
+    from {
+        transform: translate3d(0, -60px, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/*Popular*/
+
+.titulo-suspensoes {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: start;
+    padding: 80px 40px 60px 80px;
+}
+
+.popular {
+    border-radius: 4px 0 0 4px;
+    background-image: url(imagens/FB_IMG_1680100501884.jpg);
+    grid-column: 1/2;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 430px;
+    padding: 10px;
+}
+
+.popular h3 {
+    color: #fefefe;
+    margin-bottom: 2px;
+    font-size: 2rem;
+}
+
+.popular span {
+    font-size: 1rem;
+    font-weight: bold;
+    bottom: 100px;
+    color: aliceblue;
+    background-color: red;
+    padding: 10px;
+    border-radius: 20%;
+  
+    
+
+}
+
+.popular i {
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: #fefefe;
+
+}
+
+.popular-secundaria {
+    display: grid;
+    gap: 10px;
+
+}
+
+.oferta {
+    border-radius: 4px 0 0 4px;
+    background-image: url(imagens/FB_IMG_1680100508657.jpg);
+    padding: 10px;
+    height: 200px;
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-self: stretch;
+
+}
+
+.popular-secundaria span {
+    font-size: 1rem;
+    font-weight: bold;
+    bottom: 100px;
+    color: aliceblue;
+    background-color: red;
+    padding: 10px;
+    border-radius: 20%;
+
+}
+
+
+
+.oferta-2 {
+
 }
