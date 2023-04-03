@@ -202,7 +202,7 @@
 
 .popular-secundaria {
     display: grid;
-    gap: 10px;
+    gap: 30px;
 
 }
 
@@ -213,24 +213,46 @@
     height: 200px;
     max-width: 100%;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     align-self: stretch;
 
 }
 
-.popular-secundaria span {
+.oferta h3 {
+    color: #fefefe;
+    margin-bottom: 2px;
+    font-size: 2rem;
+
+}
+
+.oferta span {
     font-size: 1rem;
     font-weight: bold;
     bottom: 100px;
     color: aliceblue;
     background-color: red;
-    padding: 10px;
+    padding: 2px;
     border-radius: 20%;
 
+}
+
+.oferta i {
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #fefefe;
 }
 
 
 
 .oferta-2 {
 
+}
+
+@media(max-width: 700px) {
+    .titulo-suspensoes {
+        grid-template-columns: 1fr;
+        padding: 30px;
+
+    }
 }
