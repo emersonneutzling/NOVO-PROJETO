@@ -7,7 +7,7 @@
 }
 
 .bg {
-    background-color: rgb(135, 134, 133);
+    background-color: rgb(224, 186, 114);
 }
 
 .bg header {
@@ -17,14 +17,8 @@
     
 }
 
-.bg header h1 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 2.3em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: red;
-    
-    
+.bg header img {
+    width: 120px;
 }
 
 .bg header i {
@@ -33,7 +27,7 @@
 
 .bg header nav ul{
     display: flex;
-    gap: 20px;
+    gap: 10px;
     align-items: center;
 }
 
@@ -48,7 +42,7 @@
 }
 
 .bg header nav ul li:hover {
-    color: red;
+    color: tomato;
 }
 
 .principal {
@@ -56,6 +50,11 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
+}
+
+.principal img {
+    max-width: 70%;
+    margin: 0 auto;
 }
 
 .principal .titulo {
@@ -70,12 +69,7 @@
 
 .principal .titulo h4 {
     font-size: 3rem;
-}
-
-.principal img {
-    max-width: 70%;
-    margin: 0 auto;
-    
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .principal figure {
@@ -87,10 +81,10 @@
 
 .principal span {
     position: absolute;
-    font-size: 2rem;
+    font-size: 2.3rem;
     bottom: 100px;
     color: aliceblue;
-    background-color: red;
+    background-color: tomato;
     padding: 10px;
     border-radius: 20%;
     cursor: pointer;
@@ -106,7 +100,7 @@
         display: flex;
         flex-direction: column;
         position: absolute;
-        right: 10px;
+        right: 0px;
         margin-top: 30px;
         padding: 40px;
         animation: animation .5s forwards;
@@ -114,10 +108,10 @@
 
     nav ul li {
         text-decoration: underline;
-        margin-bottom: 30px;
+        margin-bottom: -30px;
     }
 
-    .bg header h1 {
+    .bg header img {
         width: 200px;
     }
 
@@ -154,7 +148,7 @@
 
 /*Popular*/
 
-.titulo-suspensoes {
+.titulo-hamburguer {
     display: grid;
     gap: 30px;
     grid-template-columns: 1fr 1fr;
@@ -165,7 +159,7 @@
 
 .popular {
     border-radius: 4px 0 0 4px;
-    background-image: url(imagens/FB_IMG_1680100501884.jpg);
+    background-image: url(imagens/hamburguer1.png);
     grid-column: 1/2;
     background-size: cover;
     background-position: center;
@@ -175,40 +169,33 @@
 }
 
 .popular h3 {
-    color: #fefefe;
-    margin-bottom: 2px;
+    color: #fff;
+    margin-bottom: 10px;
     font-size: 2rem;
 }
 
 .popular span {
-    font-size: 1rem;
+    color: yellow;
     font-weight: bold;
-    bottom: 100px;
-    color: aliceblue;
-    background-color: red;
-    padding: 10px;
-    border-radius: 20%;
-  
-    
-
+   
 }
 
 .popular i {
     font-size: 1.7rem;
     cursor: pointer;
-    color: #fefefe;
+    color: #fff;
 
 }
 
-.popular-secundaria {
+.popular-secundario {
     display: grid;
     gap: 30px;
 
 }
 
-.oferta {
+.terca {
     border-radius: 4px 0 0 4px;
-    background-image: url(imagens/FB_IMG_1680100508657.jpg);
+    background-image: url(imagens/hamburguer2.png);
     padding: 10px;
     height: 200px;
     max-width: 100%;
@@ -219,40 +206,55 @@
 
 }
 
-.oferta h3 {
-    color: #fefefe;
-    margin-bottom: 2px;
-    font-size: 2rem;
+.terca h3 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
 
 }
 
-.oferta span {
-    font-size: 1rem;
+.terca span {
     font-weight: bold;
-    bottom: 100px;
-    color: aliceblue;
-    background-color: red;
-    padding: 2px;
-    border-radius: 20%;
+    color:yellow;
+   
+}
+
+.quarta {
+    border-radius: 4px 0 0 4px;
+    background-image: url(imagens/hamburguer3.png);
+    padding: 10px;
+    height: 200px;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-self: stretch;
 
 }
 
-.oferta i {
-    font-size: 1.1rem;
-    cursor: pointer;
-    color: #fefefe;
+.quarta h3 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+
+}
+
+.quarta span {
+    font-weight: bold;
+    color: yellow;
 }
 
 
 
-.oferta-2 {
 
-}
+
+
 
 @media(max-width: 700px) {
-    .titulo-suspensoes {
+    .titulo-hamburguer {
         grid-template-columns: 1fr;
         padding: 30px;
-
     }
+
+    
 }
