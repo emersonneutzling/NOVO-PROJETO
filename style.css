@@ -96,19 +96,23 @@
         display: none;
     }
 
+    .titulo h1, h4 {
+        display: none;
+    }
+
     .bg header nav ul.ativo {
         display: flex;
         flex-direction: column;
         position: absolute;
         right: 0px;
-        margin-top: 30px;
-        padding: 40px;
+        margin-top: 0px;
+        padding: 10px;
         animation: animation .5s forwards;
     }
 
     nav ul li {
         text-decoration: underline;
-        margin-bottom: -30px;
+        margin-bottom: -40px;
     }
 
     .bg header img {
@@ -130,9 +134,13 @@
         grid-template-columns: 1fr;
     }
 
+    .principal img {
+        width: 420px;
+    }
+
     .principal span {
-        left: 60px;
-        font-size: 2rem;
+        left: 10px;
+        font-size: 1rem;
     }
 }
 
@@ -244,12 +252,6 @@
     color: yellow;
 }
 
-
-
-
-
-
-
 @media(max-width: 700px) {
     .titulo-hamburguer {
         grid-template-columns: 1fr;
@@ -258,3 +260,56 @@
 
     
 }
+
+/*Cardapio*/
+
+.cardapio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 30px;
+    gap: 15px;
+}
+
+.cardapio h2 {
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.cardapio h3 {
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.cardapio h1 {
+    font-size: 4rem;
+    grid-column: 1/-1;
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: monospace;
+}
+
+.cardapio p {
+    width: 70%;
+    margin: 0 auto;
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.burguer-cardapio {
+    display: grid;
+    margin: 60px 40px;
+    gap: 10px;
+    justify-content: center;
+    align-items: start;
+}
+
+.burguer-cardapio img {
+    max-width: 100%;
+}
+
