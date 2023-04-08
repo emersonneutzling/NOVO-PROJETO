@@ -357,3 +357,49 @@
     
 }
 
+/* DISCOVER */
+
+.discover {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+}
+
+.discover .grid-text {
+    display: grid;
+    gap: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: end;
+}
+
+.discover p {
+    display: none;
+    max-width: 80%;
+    margin: 0 0 0 150px;
+}
+
+.discover p.ativo {
+    display: block;
+    animation: animationRename .8s forwards;
+}
+
+.flex-discover {
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+
+@keyframes animationRename{
+    from {
+        transform: translate3d(90px, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+
+}
+
