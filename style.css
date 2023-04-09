@@ -405,7 +405,7 @@
 }
 
 @media(max-width: 900px){
-    .discover {
+   .discover {
         justify-items: center;
         grid-template-columns: 1fr;
     }
@@ -440,7 +440,7 @@
 .reserva h1 {
     margin-bottom: 30px;
     text-decoration: underline;
-    color: yellow;
+    color: tomato;
     font-size: 3rem;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
@@ -486,6 +486,15 @@
     font-style: italic;
 }
 
+@media(max-width: 700px){
+    .reserva-grid input {
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+
+}
+
 /* Scroll JS */
 
 .js-scroll {
@@ -515,7 +524,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: space-around;
-    background-image: url(imagens/footer\ background.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.478)), url(imagens/footer\ background.jpeg);
     background-size: cover;
     background-position: center;
     margin-top: 50px;
@@ -540,7 +549,7 @@ footer p {
 }
 
 .network-footer {
-    color: yellow;
+    color: tomato;
     display: grid;
     grid-row: 1;
     justify-self: center;
@@ -562,14 +571,15 @@ footer p {
     text-align: center;
     align-self: center;
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
 .icones-footer {
-    color: rgba(80, 77, 77);
-    font-size: 3rem;
+    color: tomato;
+    font-size: 1.6rem;
     gap: 30px;
     display: flex;
+    cursor: pointer;
 }
 
 
