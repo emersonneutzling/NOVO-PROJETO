@@ -365,7 +365,8 @@
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: start;
-    gap: 30px;
+    gap: 10px;
+    padding: 30px;
 }
 
 .discover .grid-text {
@@ -401,5 +402,107 @@
         transform: translate3d(0, 0, 0);
     }
 
+}
+
+@media(max-width: 900px){
+    .discover {
+        justify-items: center;
+        grid-template-columns: 1fr;
+    }
+
+    .discover div {
+        text-align: center;
+    }
+
+    .discover .grid-text {
+        grid-row: 2;
+        text-align: center;
+        margin-top: -60px;
+    }
+
+    .discover p {
+        display: none;
+        text-align: center !important;
+        margin: 0 auto 30px auto !important;
+    }
+
+}
+
+/*Reserva*/
+
+.reserva {
+    background-image: url(imagens/hamburguer\ backgroud\ \(1\).jpg);
+    background-size: cover;
+    padding: 90px;
+    background-position: center;
+}
+
+.reserva h1 {
+    text-align: center;
+    color: yellow;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.reserva-grid {
+    background-color: rgba(0, 0, 0, 0.668);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 60px;
+    margin: 0 auto;
+}
+
+
+.reserva-grid input {
+    align-self: center;
+    padding: 12px 76px 14px 8px;
+    border-radius: 4px;
+    border: none;
+    justify-self: start;
+}
+
+.reserva-grid input::placeholder {
+    font-size: .9rem;
+    color: #c4c4c4;
+}
+
+.reserva-grid button {
+    cursor: pointer;
+    grid-column: 3;
+    grid-row: 1/-1;
+    justify-self: center;
+    padding: 20px 80px;
+    border-radius: 6px;
+    background-color: tomato;
+    border: none;
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Scroll JS */
+
+.js-scroll {
+    opacity: 0;
+}
+
+.js-scroll.ativo {
+    opacity: 1;
+    animation: scrollSlide .6s forwards;
+}
+
+@keyframes scrollSlide {
+    from {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
 }
 

@@ -12,6 +12,8 @@ function clicou() {
 
 MENUCLICK();
 
+
+
 const lista = document.querySelectorAll('.js-texto p');
 const listaIcone = document.querySelectorAll('.js-texto i');
 lista[0].classList.add('ativo')
@@ -29,3 +31,19 @@ listaIcone.forEach((item, index) => {
         clickLista(index)
     })
 })
+
+const scroll = document.querySelectorAll('.js-scroll');
+const height = window.innerHeight * 0.6;
+scroll[0].classList.add('ativo')
+
+
+function mouseScroll() {
+    scroll.forEach((section) => {
+        const sectionTop = (section.getBoundingClientRect().top - height) < 0;
+        if(sectionTop) {
+            section.classList.add('ativo');
+        }
+    })
+}
+
+window.addEventListener('scroll', mouseScroll)
