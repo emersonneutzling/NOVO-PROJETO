@@ -28,7 +28,7 @@ listaIcone.forEach((item, index) => {
 
 const scroll = document.querySelectorAll('.js-scroll');
 const height = window.innerHeight * 0.6;
-scroll[0].classList.add('ativo')
+scroll[0].classList.add('ativo');
 
 
 function mouseScroll() {
