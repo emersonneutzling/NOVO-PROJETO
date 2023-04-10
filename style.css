@@ -422,6 +422,7 @@
 
     .discover p {
         display: none;
+        font-size: .8rem;
         text-align: center !important;
         margin: 0 auto 30px auto !important;
     }
@@ -468,7 +469,7 @@
 
 .reserva-grid input::placeholder {
     font-size: .9rem;
-    color: #c4c4c4;
+    color: black;
 }
 
 .reserva-grid button {
@@ -487,10 +488,25 @@
 }
 
 @media(max-width: 700px){
-    .reserva-grid input {
+    .reserva-grid {
         display: grid;
         grid-template-columns: 1fr;
-        
+      
+    } 
+
+    .reserva h1 {
+        margin-bottom: 100px;
+    }
+
+    .reserva-grid input {
+        padding: 2px 20px 1px 1px;
+
+    }
+
+    .reserva-grid button {
+        padding: 5px 20px;
+        grid-column: 1;
+
     }
 
 }
@@ -580,6 +596,28 @@ footer p {
     gap: 30px;
     display: flex;
     cursor: pointer;
+}
+
+@media(max-width: 700px) {
+    footer h1 {
+        font-size: 2rem;
+    }
+
+    footer p {
+        font-size: .8rem;
+    }
+    .network-footer {
+        display: none;
+    }
+
+    .company h6{
+        font-size: .8rem;
+    }
+
+    .icones-footer {
+        gap: 3px;
+    }
+
 }
 
 
