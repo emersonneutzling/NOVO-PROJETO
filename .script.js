@@ -8,12 +8,6 @@ function clicou() {
     nav.classList.toggle('ativo');
 }
 
-
-
-
-
-
-
 const lista = document.querySelectorAll('.js-texto p');
 const listaIcone = document.querySelectorAll('.js-texto i');
 lista[0].classList.add('ativo')
